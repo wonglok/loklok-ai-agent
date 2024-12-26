@@ -12,6 +12,7 @@ const handler = {
         let parsed = JSON.parse(response);
         if (parsed.callID === callID) {
           if (parsed.close) {
+            emit(parsed.payload);
             ipcRenderer.removeListener(method, hh);
           } else {
             emit(parsed.payload);
