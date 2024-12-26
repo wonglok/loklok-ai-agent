@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "loklok-ai-agent",
+  "description": "loklok-ai-agent",
+  "version": "1.0.0",
+  "author": "Lok Wong",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "electron-serve": "^1.3.0",
+    "electron-store": "^8.2.0",
+    "tinkerbird": "^0.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "@types/react": "^18.2.52",
+    "autoprefixer": "^10.4.19",
+    "electron": "^31.0.1",
+    "electron-builder": "^24.13.3",
+    "next": "^14.2.4",
+    "nextron": "^9.4.0",
+    "postcss": "^8.4.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
